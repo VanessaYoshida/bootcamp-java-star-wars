@@ -11,3 +11,7 @@ jedis:
     name: "Yoda"
     strength: 500
     version: 1
+  - id: 4
+    name: "Princesa Leia"
+    strength: 100
+    version: 1
