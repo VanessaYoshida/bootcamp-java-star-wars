@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.rules.Timeout;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -16,6 +17,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
+import java.util.logging.Filter;
 
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
@@ -69,43 +71,27 @@ public class JediTestService {
         //cenario
         Jedi mockJedi = new Jedi(2, "Luke Skywalker", 100, 1);
         Jedi mockJedi2 = new Jedi(3, "Yoda", 500, 1);
-        Mockito.doReturn(Optional.of(mockJedi)).when(jediRepository).findAll();
+        Mockito.doReturn(Arrays.asList(mockJedi, mockJedi2)).when(jediRepository).findAll();
 
         //execucao
         List<Jedi> returnedJedi = jediService.findAll();
 
         //assert
-//        Assertions.assertTrue(returnedJedi., "Jedi was found");
-//        Assertions.assertSame(returnedJedi.get(), mockJedi, "Jedis must be the same");
-
-
-//        @Test
-//        public void testProcess(){
-//            final List<SoapEvent> soapEvents = new ArrayList<SoapEvent>();
-//            for(int index = 0; index < 3; index++){
-//                final SoapEvent soapEvent = SoapEventGenerator.generateSoapEvent();
-//                soapEvents.add(soapEvent);
-//            }
-//
-//            Mockito.when(repository.findAll()).thenReturn(soapEvents);
-//
-//            final ReadAllSoapEventInput input = ReadAllSoapEventInput.builder().build();
-//            final ServiceTask<ReadAllSoapEventInput> serviceTask = new ServiceTask<ReadAllSoapEventInput>(input);
-//            final ServiceResult<ReadAllSoapEventOutput> serviceResult = service.process(serviceTask);
-//            final ReadAllSoapEventOutput output = serviceResult.getOutput();
-//
-//            Assert.assertEquals(soapEvents.size(), output.getSoapEvents().size());
-//
-//            for(int index = 0; index < 3; index++){
-//                final SoapEvent soapEvent = soapEvents.get(index);
-//                final SoapEvent returnedSoapEvent = output.getSoapEvents().get(index);
-//
-//                Assert.assertEquals(soapEvent.getId(), returnedSoapEvent.getId());
-//                Assert.assertEquals(soapEvent.getOperationId(), returnedSoapEvent.getOperationId());
-//                Assert.assertEquals(soapEvent.getPortId(), returnedSoapEvent.getPortId());
-//                Assert.assertEquals(soapEvent.getProjectId(), returnedSoapEvent.getProjectId());
-//            }
-//        }
-//    }
+        Assertions.assertEquals(2, returnedJedi.size(), "Mesma quantidade de Jedis encontrados");
     }
+
+//    @Test
+//    @DisplayName("Should update jedi")
+//    public void testUpdateJedi(){
+//
+//        //cenario
+//        Jedi mockJedi = new Jedi(2, "Luke Skywalker", 100, 1);
+//        Object variavel = jediRepository.findById(2);
+//
+//        //execucao
+//        List<Jedi> returnedJedi = jediService.findAll();
+//
+//        //assert
+//        Assertions.assertEquals(2, returnedJedi.size(), "Mesma quantidade de Jedis encontrados");
+//    }
 }
