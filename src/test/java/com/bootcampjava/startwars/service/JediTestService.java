@@ -79,19 +79,4 @@ public class JediTestService {
         //assert
         Assertions.assertEquals(2, returnedJedi.size(), "Mesma quantidade de Jedis encontrados");
     }
-
-//    @Test
-//    @DisplayName("Should update jedi")
-//    public void testUpdateJedi(){
-//
-//        //cenario
-//        Jedi mockJedi = new Jedi(2, "Luke Skywalker", 100, 1);
-//        Object variavel = jediRepository.findById(2);
-//
-//        //execucao
-//        List<Jedi> returnedJedi = jediService.findAll();
-//
-//        //assert
-//        Assertions.assertEquals(2, returnedJedi.size(), "Mesma quantidade de Jedis encontrados");
-//    }
 }
