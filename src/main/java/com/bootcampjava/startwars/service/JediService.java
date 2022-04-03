@@ -4,6 +4,7 @@ import com.bootcampjava.startwars.model.Jedi;
 import com.bootcampjava.startwars.repository.JediRepositoryImpl;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -57,6 +58,11 @@ public class JediService {
     }
 
     public boolean delete(int id) {
-        return true;
+
+        boolean deleted = false;
+
+        if (this.delete(id)) deleted = true;
+
+        return deleted;
     }
 }
