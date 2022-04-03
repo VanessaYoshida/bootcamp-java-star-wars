@@ -2,14 +2,14 @@ package com.bootcampjava.startwars.model;
 
 public class Jedi {
 
-    private Integer id;
+    private int id;
     private String name;
     private int strength;
     private int version;
 
     public Jedi() {}
 
-    public Jedi(Integer id, String name, int strength, int version) {
+    public Jedi(int id, String name, int strength, int version) {
         this.id = id;
         this.name = name;
         this.strength = strength;
@@ -42,7 +42,7 @@ public class Jedi {
     public int getId() {
         return id;
     }
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 }
