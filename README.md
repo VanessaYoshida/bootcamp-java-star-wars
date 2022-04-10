@@ -7,12 +7,12 @@
 
 ## Índice
 
-- [1. O que são microsserviços?](#1-microsserviços)
-- [2. O que é TDD?](#2-tdd)
-- [3. Tecnologias Usadas](#3-tecnologias)
-- [4. Funcionalidades do microsserviço](#3-funcionalidades)
-- [5. Checklist das tarefas solicitadas no Bootcamp](#3-checklist)
-- [6. Referências](#3-referencias)
+* [1. O que são microsserviços?](#1-microsserviços)
+* [2. O que é TDD?](#2-tdd)
+* [3. Tecnologias Usadas](#3-tecnologias)
+* [4. Funcionalidades do microsserviço](#3-funcionalidades)
+* [5. Checklist das tarefas solicitadas no Bootcamp](#3-checklist)
+* [6. Referências](#3-referencias)
 
 ## 1. O que são microsserviços?
 Os microsserviços (ou a arquitetura de microsserviços) consistem em uma abordagem arquitetônica nativa de cloud na qual um único aplicativo é composto de muitos componentes ou serviços menores que são implementáveis de forma independente e têm acoplamento fraco.
