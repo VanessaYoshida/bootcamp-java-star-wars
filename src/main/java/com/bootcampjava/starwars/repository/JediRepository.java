@@ -1,6 +1,6 @@
-package com.bootcampjava.startwars.repository;
+package com.bootcampjava.starwars.repository;
 
-import com.bootcampjava.startwars.model.Jedi;
+import com.bootcampjava.starwars.model.Jedi;
 
 import java.util.List;
 import java.util.Optional;

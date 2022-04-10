@@ -1,23 +1,20 @@
-package com.bootcampjava.startwars.service;
+package com.bootcampjava.starwars.service;
 
-import com.bootcampjava.startwars.model.Jedi;
-import com.bootcampjava.startwars.repository.JediRepositoryImpl;
+import com.bootcampjava.starwars.model.Jedi;
+import com.bootcampjava.starwars.repository.JediRepositoryImpl;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.junit.rules.Timeout;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
-import java.util.logging.Filter;
 
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
