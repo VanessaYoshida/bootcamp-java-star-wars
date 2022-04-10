@@ -3,7 +3,7 @@
     <img alt="center" title="WomakersCode" src="img/womakerscode.png">
 </h1>
 
-<p align="center"> No Bootcamp de Java da WomakersCode estamos trabalhando com a construção de microsserviços para aprimorar nossos conhecimentos na sua arquitetura e também em como podemos aplicar a metodologia do TDD para a criação do mesmo. </p> 
+<p align="center"> No Bootcamp de Java da WomakersCode estamos desenvolvendo microsserviços com Spring Boot e utilizando técnicas de desenvolvimento guiada por testes utilizando a metodologia do TDD. </p> 
 
 ## Índice
 
