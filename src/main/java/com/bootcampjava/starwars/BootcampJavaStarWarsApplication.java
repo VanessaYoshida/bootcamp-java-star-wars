@@ -1,4 +1,4 @@
-package com.bootcampjava.startwars;
+package com.bootcampjava.starwars;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

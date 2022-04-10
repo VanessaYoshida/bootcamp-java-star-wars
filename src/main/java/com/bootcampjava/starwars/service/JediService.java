@@ -1,10 +1,9 @@
-package com.bootcampjava.startwars.service;
+package com.bootcampjava.starwars.service;
 
-import com.bootcampjava.startwars.model.Jedi;
-import com.bootcampjava.startwars.repository.JediRepositoryImpl;
+import com.bootcampjava.starwars.model.Jedi;
+import com.bootcampjava.starwars.repository.JediRepositoryImpl;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

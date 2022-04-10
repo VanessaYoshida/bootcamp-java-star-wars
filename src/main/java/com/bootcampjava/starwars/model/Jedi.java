@@ -1,4 +1,4 @@
-package com.bootcampjava.startwars.model;
+package com.bootcampjava.starwars.model;
 
 public class Jedi {
 

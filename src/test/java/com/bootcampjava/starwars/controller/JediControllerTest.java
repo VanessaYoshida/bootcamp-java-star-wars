@@ -1,7 +1,7 @@
-package com.bootcampjava.startwars.controller;
+package com.bootcampjava.starwars.controller;
 
-import com.bootcampjava.startwars.model.Jedi;
-import com.bootcampjava.startwars.service.JediService;
+import com.bootcampjava.starwars.model.Jedi;
+import com.bootcampjava.starwars.service.JediService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.DisplayName;
@@ -232,7 +232,4 @@ public class JediControllerTest {
         mockMvc.perform(delete("/jedi/{id}", 1))
                 .andExpect(status().isInternalServerError());
     }
-
-
-
 }
