@@ -73,7 +73,7 @@ TDD é uma sigla para Test Driven Development, ou Desenvolvimento Orientado a Te
 
 ### JediControllerTest
 - [x] Teste do PUT com sucesso
-- [x] Teste do PUT com uma versao igual da ja existente - deve retornar um conflito
+- [x] Teste do PUT com uma versao igual da já existente - deve retornar um conflito
 - [x] Teste do PUT com erro - not found
 - [x] Teste do delete com sucesso
 - [x] Teste do delete com erro - deletar um id ja deletado
